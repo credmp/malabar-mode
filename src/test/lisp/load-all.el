@@ -15,10 +15,10 @@
 ;; Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
 ;; 02110-1301 USA.
 ;;
-(when load-file-name
-  (add-to-list 'load-path (replace-regexp-in-string "test" "main"
-                                                    (file-name-directory load-file-name)
-                                                    t t)))
-
-(require 'cedet)
-(require 'malabar-mode)
+;; (when load-file-name
+;;   (add-to-list 'load-path (replace-regexp-in-string "test" "main"
+;;                                                     (file-name-directory load-file-name)
+;;                                                     t t)))
+;; 
+;; (require 'cedet)
+;; (require 'malabar-mode)

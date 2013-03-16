@@ -93,7 +93,7 @@ class ClasspathTest
     @Test
     void scannerImplementsIteratorString() {
         String result = classInfo("java.util.Scanner");
-        assertThat(result, containsString(':interfaces ("java.util.Iterator<java.lang.String>")'));
+        assertThat(result, containsString(':interfaces ("java.util.Iterator<java.lang.String>"'));
     }
 
     @Test

@@ -21,6 +21,14 @@
                                                     (file-name-directory load-file-name)
                                                     t t)))
 
+(defun my-string-match-p (regexp string &optional start)
+  "Same as `string-match' except this function does not change the match data."
+  (let ((inhibit-changing-match-data t))
+    (string-match regexp string start)))
+
+(when (not (fboundp 'string-match-p))
+  (fset 'string-match-p (symbol-function 'my-string-match-p)))
+
 (require 'elk-test)
 
 (setq elk-test-run-on-define nil)
